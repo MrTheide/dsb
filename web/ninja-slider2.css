@@ -1,0 +1,817 @@
+/* Visit http://www.menucool.com/responsive-slider for instructions */
+
+body {
+    margin: 0;
+    background-color: lightgray;
+}
+
+/* TEST */
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 1% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #4CAF50;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #43A047;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b33a44;
+  font-size: 16px;
+    font-weight: bold;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+
+
+/* TEST END */
+p.c {
+    color: black;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+    padding: 20px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 4px solid #E85E57;
+    font-family: "yu gothic", sans-serif;
+}
+figcaption p {
+    text-align: center;
+    color: white;
+    margin: 0;
+    border: none;
+    font-size: small;
+    text-decoration: none;
+    font-family: Courier, 'monospace', 'Bree Serif', sans-serif;
+
+}
+
+ul.side {
+    position: fixed;
+    top: 40%;
+    list-style: none;
+    height: 1px;
+    width: 1px;
+    z-index: 999;
+}
+.f-nav {
+
+    position: fixed;
+    left: 270px;
+    top: 40%;
+    list-style: none;
+
+
+}
+
+ul.side li a{
+    position: relative;
+    left: -550px;
+    display: block;
+    margin-bottom: 2px;
+    border-bottom: 4px solid #E85E57;
+    text-decoration: none;
+    color: black;
+    font-family: Courier, monospace, sans-serif;
+    font-weight: bold;
+    font-size: 1.5em;
+    line-height: 40px;
+    padding-right: 10px;
+    height: 40px;
+    width: 380px;
+    background-color: rgba(255,255,255,0.8);
+    text-align: right;
+    transition: 0.4s;
+    z-index: 999;
+    border-top-right-radius: 5px;
+}
+ul.side li a#upper {
+
+}
+ul.side li a#lower {
+
+}
+ul.side li a:hover {
+    position: relative;
+    left: -470px;
+    transition: 0.4s;
+}
+img.sidepic {
+    width: 180px;
+    float: right;
+    position: relative;
+    top: 65px; right: 0; margin: auto;
+    border-top-left-radius: 20px;
+    border-bottom: 4px solid #E85E57;
+}
+h2 {
+    font-family: 'monospace', sans-serif;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -5%;
+    z-index: 9;
+    color: rgba(255,255,255,0.7);
+    font-size: 10em;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    background-color: rgba(255,255,255,0)
+}
+@media (max-width: 920px) {
+    h2 {
+        display: none;
+    }
+    ul.side {
+        display: none;
+    }
+    a.up {
+
+        position: fixed;
+        width: 50px;
+        left: 0; right: 0; bottom: 0;
+        margin: auto;
+        z-index: 10;
+
+    }
+
+}
+@media (max-width: 550px) {
+    div.content {
+        min-width: 100%;
+    }
+}
+a.up {
+    width: auto;
+    height: auto;
+    margin: auto;
+    text-align: center;
+}
+nav {
+    width: 100%;
+    position: absolute;
+    z-index: 9;
+}
+
+nav ul {
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+    padding:0;
+    text-align: center;
+}
+
+nav ul li{
+    position: relative;
+    display: inline-block;
+    width: auto;
+    text-align: center;
+    color: white;
+    top: 15px;
+    font-size: 40px;
+    line-height: 30px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Courier, monospace, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    padding-right: 10px;
+    padding-left: 10px;
+    height: 40px;
+}
+nav ul li a:hover {
+    opacity: 0.7;
+    text-transform: lowercase;
+}
+
+h3 {
+    font-family: "Courier", monospace, sans-serif;
+    text-transform: uppercase;
+    position: relative;
+    margin-bottom: 50px;
+    background-color: rgba(0,0,0,0.4);
+    left: 0;
+    right: 0;
+    top: -5%;
+    z-index: 9;
+    color: lightgray;
+    font-size: 8em;
+    text-align: center;
+    border-bottom: 2px solid white;
+    border-top: 2px solid white;
+    text-decoration: #E85E57 underline;
+    text-shadow: 0 2px 2px #E85E57;
+
+}
+
+a.up img {
+    height: 50px;
+    width: 50px;
+}
+
+div.content {
+    width: 75%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    padding-bottom: 20px;
+    color: black;
+    font-family: "yu gothic", sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 50px;
+    border-bottom: 4px solid #E85E57;
+
+}
+/*-------------------------------
+
+	RULES
+
+-------------------------------*/
+table.jobs {
+    position: relative;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-family: "yu gothic", sans-serif;
+    color: black;
+    padding-bottom: 10px;
+    border-bottom: 4px solid #E85E57;
+    left: 0; right: 0; top: 20px;
+}
+
+table.jobs span.italic {
+    font-style: italic;
+}
+table.jobs td.tit {
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+table.jobs span.bold {
+    font-weight: bold;
+    text-align: left;
+
+}
+span.bold {
+    font-weight: bold;
+    text-align: left;
+
+}
+/*-------------------------------
+
+	CONTACT
+
+-------------------------------*/
+table.contactinfo {
+    position: relative;
+    right: 0;
+    left: 0;
+    top: 20px;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-family: "yu gothic", sans-serif;
+    color: black;
+
+    border-bottom: 4px solid #E85E57;
+}
+
+
+/*
+position: relative;
+    right: 0;
+    left: 0;
+    top: 20px;
+    margin: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    font-family: "yu gothic", sans-serif;
+    text-shadow: 0 1px 1px black;
+    color: lightgrey;
+
+    background-color: gray;
+    */
+td.titel {
+    font-size: 1.6em;
+    padding-right: 60px;
+    text-transform: uppercase;
+
+}
+
+.venstre {
+    position:relative;
+    left: -2px;
+
+}
+table.contactinfo tr.noborder td{
+    border: none;
+    padding-bottom: 20px;
+
+}
+table.contactinfo tr td {
+    padding-top: 15px;
+    border-bottom: 2px solid white;
+}
+a.upper:hover img.sociallogo{
+    border-radius: 0;
+    transition: 0.4s;
+
+}
+
+img.sociallogo {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    transition: 0.4s;
+}
+
+
+a img.mail {
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    margin-bottom: 10px;
+    margin-left: 50px;
+}
+a img.mail:hover {
+    opacity: 0.7;
+}
+/* _____________________________________IMAGES_____________________________________________ */
+.photo-grid {
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    padding: 0;
+
+}
+
+.photo-grid li {
+    display: inline-block;
+    width: 389px;
+    margin: 4px;
+
+}
+
+.photo-grid img {
+    position:relative;
+    top: -20px;
+    display: block;
+    height: auto;
+    width: 100%;
+    text-align: center;
+
+
+
+}
+
+.photo-grid figure {
+
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    width: 389px;
+    margin: 0;
+    border: 2px solid white;
+
+}
+
+.photo-grid figcaption {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    display: table;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 100;
+
+}
+
+.photo-grid figcaption p {
+    display: table-cell;
+    font-size: 1.5em;
+    position: relative;
+    top: -40px;
+    width: 289px;
+    vertical-align: middle;
+
+}
+
+.photo-grid li:hover figcaption {
+    opacity: 1;
+}
+
+.photo-grid img {
+    display: block;
+    height: auto;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    max-width: 100%;
+
+}
+
+.photo-grid li:hover img {
+    -webkit-transform: scale(1.4);
+    -moz-transform: scale(1.4);
+    transform: scale(1.4);
+
+}
+
+.photo-grid figcaption p {
+    display: table-cell;
+    font-size: 1.5em;
+    position: relative;
+    top: -40px;
+    width: 289px;
+    -webkit-transition: all 300ms ease-out;
+    -moz-transition: all 300ms ease-out;
+    transition: all 300ms ease-out;
+    vertical-align: middle;
+
+}
+
+.photo-grid li:hover figcaption p {
+    -moz-transform: translateY(40px);
+    -webkit-transform: translateY(40px);
+    transform: translateY(40px);
+    background:transparent url(images/pattern.png) repeat 0 0;
+}
+
+.photo-grid figcaption {
+    background: rgba(0,0,0,0.4);
+    color: white;
+    display: table;
+    height: 100%;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    -webkit-transition: all 300ms;
+    -moz-transition: all 300ms;
+    transition: all 300ms;
+    -webkit-transition-delay: 100ms;
+    -moz-transition-delay: 100ms;
+    transition-delay: 100ms;
+    z-index: 100;
+}
+/* _____________________________________NINJA SLIDER_____________________________________________ */
+#ninja-slider {
+    width:100%;
+    background:#FFF;
+    padding: 0!important;
+
+    margin:0 auto;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider div.slider-inner {
+    /*max-width:720px;*/
+    margin:0 auto;/*center-aligned */
+    font-size:0px;
+    position:relative;
+    box-sizing:border-box;
+}
+
+#ninja-slider ul {
+    position:relative;
+    list-style:none;
+    padding:0;
+    box-sizing:border-box;
+    background:black;
+}
+
+#ninja-slider li {
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    position: absolute;
+    font-size:12px;
+    list-style:none;
+    margin:0;
+    padding:0;
+    opacity:0;
+    overflow:hidden;
+    box-sizing:border-box;
+}
+
+#ninja-slider li::after {
+    content:"";
+    display:block;
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:transparent url(images/pattern.png) repeat 0 0;
+    top:0;left:0;
+}
+
+
+#ninja-slider li.ns-show {
+    opacity:1;
+}
+
+
+/* --------- slider image ------- */
+#ninja-slider .ns-img {
+    background-color:rgba(0,0,0,0.8);
+    background-size:contain;/*Note: If transitionType is zoom, it will be overridden to cover.*/
+
+    /*box-shadow: 0 1px 5px rgba(0,0,0,.8),inset 0 0 2px rgba(255,255,255,.4);*/
+    border-radius:4px;
+
+    cursor:default;
+    display:block;
+    position: absolute;
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-position:center center;
+}
+
+
+/*---------- Captions -------------------*/
+
+#ninja-slider div.caption {
+    font-size:10em;
+    font-family: Courier, 'monospace','Bree Serif', sans-serif;
+    position:absolute;
+    width:100%;
+    text-align:center;
+    color:rgba(255,255,255,0.8);
+    bottom:20%;
+}
+#ninja-slider li[class*='-'] div.caption {
+    /* 5s = delay + transitionSpeed */
+    -webkit-animation: titleAnimation 5s linear both;
+    animation: titleAnimation 5s linear both;
+}
+
+@keyframes titleAnimation {
+    0% { opacity:0; }
+    10% { opacity:0;transform: translateY(-20%);}
+    20% { opacity:1;transform: translateY(0%);}
+    70% {opacity:1;transform: translateY(0%);}
+    80% {opacity:0;transform: translateY(100%);}
+    100% {opacity:0;transform: translateY(100%);}
+}
+
+@-webkit-keyframes titleAnimation {
+    0% { opacity:0; }
+    10% { opacity:0; -webkit-transform:translateY(-20%);}
+    25% { opacity:1; -webkit-transform:translateY(0%);}
+    70% {opacity:1; -webkit-transform:translateY(0%);}
+    80% {opacity:0; -webkit-transform:translateY(100%);}
+    100% {opacity:0; -webkit-transform:translateY(100%);}
+}
+
+/* ---------Arrow buttons ------- */
+/* The arrow button id should be: slider id + ("-prev", "-next", and "-pause-play") */
+/* Usually the ninja-slider.js will create the arrow buttons and pager(nav dots) automatically, unless you have added their markup manually to the HTML as this demo did.
+   This demo has put them inside a DIV.navWrapper.
+*/
+
+div.navsWrapper {
+    position:absolute;
+    height:52px;
+    right:90px;
+    bottom:9%;
+    z-index:5;
+}
+
+#ninja-slider-prev, #ninja-slider-next
+{
+    position: absolute;
+    display:inline-block;
+    width:52px;
+    height:52px;
+    line-height:52px;
+    margin:0;
+    border:2px solid white;
+    backface-visibility:hidden;
+    color:white;
+    overflow:hidden;
+    -webkit-user-select: none;
+    user-select:none;
+    font-family:sans-serif;
+    font-size:14px;
+    transition:all 0.5s;
+    cursor:pointer;
+}
+
+#ninja-slider-prev {
+    left:auto; right:-1px;
+}
+
+#ninja-slider-next {
+    left:-1px; right:auto;
+}
+
+#ninja-slider-prev:hover, #ninja-slider-next:hover {width:80px;background-color:rgba(0,0,0,0.6);}
+
+/*pagination within the prev/next buttons*/
+#ninja-slider-prev div {margin-right:41px;white-space:nowrap;float:right;opacity:0;}
+#ninja-slider-next div {margin-left:41px;white-space:nowrap;opacity:0;}
+#ninja-slider-prev:hover div, #ninja-slider-next:hover div {opacity:1;}
+
+/* arrows */
+#ninja-slider-prev::before, #ninja-slider-next::before {
+    position: absolute;
+    top: 17px;
+    content: "";
+    display: inline-block;
+    width: 13px;
+    height: 13px;
+    border-left: 4px solid white;
+    border-top: 4px solid white;
+}
+
+#ninja-slider-prev::before {
+    -ms-transform:rotate(-45deg);/*IE 9*/
+    -webkit-transform:rotate(-45deg);
+    transform: rotate(-45deg);
+    right:15px;
+}
+
+#ninja-slider-next::before {
+    -ms-transform:rotate(135deg);/*IE 9*/
+    -webkit-transform:rotate(135deg);
+    transform: rotate(135deg);
+    left:15px;
+}
+
+
+/*------ pager(nav bullets) ------*/
+/* The pager id should be: slider id + "-pager" */
+#ninja-slider-pager, #ninja-slider-pause-play { display:none;}
+
+
+/*Responsive settings*/
+@media only screen and (max-width:500px){
+
+    #ninja-slider-prev, #ninja-slider-next, #ninja-slider-pager {
+        display:none;
+    }
+}
+
+@media only screen and (max-width:1100px){
+    #ninja-slider div.caption {
+        font-size:7em;
+    }
+}
+
+@media only screen and (max-width:700px){
+    #ninja-slider div.caption {
+        font-size:3em;
+    }
+}
+/*-------------------------------
+
+	POPUP.CSS
+
+-------------------------------*/
+
+.popup_back {
+    height: 100%;
+    left: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.popup_cont {
+    position: fixed;
+    z-index: 102;
+}
+
+.preloader {
+    z-index: 101;
+}
+
+/*---------------------
+
+	EDIT BELOW
+
+*/
+
+.popup_close {
+    color: #888;
+    cursor: pointer;
+    position: absolute;
+    padding: 5px;
+    right: 5px;
+    top: 0;
+}
+
+.popup_close:hover {
+    color: #111;
+}
+
+.popup_back {
+    cursor: pointer;
+    background-color: #222;
+}
+
+div.popup {
+    background: #fff;
+    padding: 25px;
+    box-shadow: 0 3px 10px #222;
+}
+
+.preloader {
+    left: 50%;
+    margin: -10px 0 0 -25px;
+    position: fixed;
+    top: 50%;
+}
